@@ -3,6 +3,7 @@ package App;
 import Card.AbstractCard;
 import Card.BasicCard;
 import Card.CardEnum;
+import Service.ValidationService;
 
 public class CardApp {
     public static void main(String[] args){
