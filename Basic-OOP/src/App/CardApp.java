@@ -7,7 +7,11 @@ import Service.ValidationService;
 
 public class CardApp {
     public static void main(String[] args){
-
-        AbstractCard card = new BasicCard("Who are you?", "Foo", CardEnum.BasicCard);
+        AbstractCard card = new BasicCard(null, "Foo", CardEnum.BasicCard);
+        try {
+            ValidationService.validate(card);
+        }catch (Throwable e){
+            System.out.println(e.getMessage());
+        }
     }
 }
