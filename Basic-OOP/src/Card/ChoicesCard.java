@@ -1,5 +1,7 @@
 package Card;
 
+import java.util.List;
+
 public class ChoicesCard extends AbstractCard {
     private String[] cardChoices;
 
@@ -13,5 +15,16 @@ public class ChoicesCard extends AbstractCard {
 
     public void setCardChoices(String[] cardChoices) {
         this.cardChoices = cardChoices;
+    }
+
+    public String getStringCardChoices(){
+        Iterable<String> card = List.of(this.cardChoices);
+
+        StringBuilder cardList = new StringBuilder();
+
+        for (var item:card){
+            cardList.append(item);
+        }
+        return cardList.toString();
     }
 }
