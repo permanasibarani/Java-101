@@ -6,6 +6,7 @@ import Card.CardEnum;
 import Card.ChoicesCard;
 import Service.ValidationService;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class CardApp {
@@ -16,5 +17,6 @@ public class CardApp {
         System.out.println(card.getStringCardChoices());
         System.out.println(card.stringChoices());
         System.out.println(card.getCardAnswer());
+        System.out.println(Arrays.toString(card.getCardChoices()));
     }
 }
