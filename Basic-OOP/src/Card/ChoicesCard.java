@@ -29,12 +29,14 @@ public class ChoicesCard extends AbstractCard {
         return cardList.toString();
     }
 
-    public void stringChoices(){
+    public String stringChoices(){
 
-        List<String> card = new ArrayList<>(List.of(this.cardChoices));
+        List<String> card = new ArrayList<>();
 
-        for(var item:card){
-            System.out.println(item);
+        for(var i =0; i < this.cardChoices.length; i++){
+            card.add(this.cardChoices[i]);
         }
+        card.removeLast();
+        return card.toString();
     }
 }

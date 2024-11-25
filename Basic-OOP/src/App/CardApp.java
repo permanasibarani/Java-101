@@ -14,6 +14,6 @@ public class CardApp {
 
         card.setCardChoices(new String[]{"Wow", "Wew", "Wuw"});
         System.out.println(card.getStringCardChoices());
-        card.stringChoices();
+        System.out.println(card.stringChoices());
     }
 }
