@@ -1,5 +1,6 @@
 package Card;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ChoicesCard extends AbstractCard {
@@ -26,5 +27,14 @@ public class ChoicesCard extends AbstractCard {
             cardList.append(item);
         }
         return cardList.toString();
+    }
+
+    public void stringChoices(){
+
+        List<String> card = new ArrayList<>(List.of(this.cardChoices));
+
+        for(var item:card){
+            System.out.println(item);
+        }
     }
 }
