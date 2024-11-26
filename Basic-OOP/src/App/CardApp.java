@@ -17,5 +17,8 @@ public class CardApp {
         List <String> choices = Arrays.asList("Foo", "Bar", "Nor");
         card.setInitialChoices(choices);
         System.out.println(card.getCardChoices());
+
+        card.replaceChoice(2, "War");
+        System.out.println(card.getCardChoices());
     }
 }

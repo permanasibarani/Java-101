@@ -20,4 +20,8 @@ public class ChoicesCard extends AbstractCard {
     public void setInitialChoices(List<String> choices){
         this.cardChoices.addAll(choices);
     }
+
+    public void replaceChoice(int index, String newChoice){
+        this.cardChoices.set(index, newChoice);
+    }
 }
