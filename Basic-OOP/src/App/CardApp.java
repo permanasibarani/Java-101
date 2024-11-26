@@ -1,12 +1,8 @@
 package App;
 
-import Card.AbstractCard;
-import Card.BasicCard;
 import Card.CardEnum;
 import Card.ChoicesCard;
-import Service.ValidationService;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,5 +19,11 @@ public class CardApp {
 
         card.getCardChoices().add("Woo");
         System.out.println(card.getCardChoices());
+
+        for(var choice: card.getCardChoices()){
+            System.out.println(choice);
+        }
+
+
     }
 }
