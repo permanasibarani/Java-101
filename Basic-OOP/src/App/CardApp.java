@@ -20,5 +20,8 @@ public class CardApp {
 
         card.replaceChoice(2, "War");
         System.out.println(card.getCardChoices());
+
+        card.getCardChoices().add("Woo");
+        System.out.println(card.getCardChoices());
     }
 }
