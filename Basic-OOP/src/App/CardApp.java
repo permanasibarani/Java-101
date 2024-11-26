@@ -24,6 +24,8 @@ public class CardApp {
             System.out.println(choice);
         }
 
+        List <String> choice = card.getCardChoices();
 
+        System.out.println(choice.subList(0,2));
     }
 }
