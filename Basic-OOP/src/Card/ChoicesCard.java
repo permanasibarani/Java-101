@@ -18,9 +18,14 @@ public class ChoicesCard extends AbstractCard {
         this.cardChoices.addAll(choices);
     }
 
-    public HashSet<String> getUniqueChoices(){
+    public HashSet<String> getUniqueChoicesWithHashSet(){
         HashSet<String> uniqueChoices = new HashSet<>(cardChoices);
         return uniqueChoices;
+    }
+
+    public List<String> getUniqueChoicesWithLinkedHashSet(){
+        Set<String> uniqueChoices= new LinkedHashSet<>(this.cardChoices);
+        return new ArrayList<String>(uniqueChoices);
     }
 
     public void replaceChoice(int index, String newChoice){

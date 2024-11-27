@@ -12,6 +12,7 @@ public class CardApp {
 
         List <String> choices = Arrays.asList("Foo", "Bar", "Nor", "Bar", "Goo", "Foo");
         card.setInitialChoices(choices);
-        System.out.println(card.getUniqueChoices());
+        System.out.println(card.getUniqueChoicesWithHashSet());
+        System.out.println(card.getUniqueChoicesWithLinkedHashSet());
     }
 }
