@@ -1,9 +1,6 @@
 package Card;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class ChoicesCard extends AbstractCard {
     private List<String> cardChoices;
@@ -19,6 +16,11 @@ public class ChoicesCard extends AbstractCard {
 
     public void setInitialChoices(List<String> choices){
         this.cardChoices.addAll(choices);
+    }
+
+    public HashSet<String> getUniqueChoices(){
+        HashSet<String> uniqueChoices = new HashSet<>(cardChoices);
+        return uniqueChoices;
     }
 
     public void replaceChoice(int index, String newChoice){

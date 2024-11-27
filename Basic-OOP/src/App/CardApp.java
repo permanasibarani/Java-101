@@ -10,22 +10,8 @@ public class CardApp {
     public static void main(String[] args){
         ChoicesCard card = new ChoicesCard("Foo?", "Bar", CardEnum.ChoicesCard);
 
-        List <String> choices = Arrays.asList("Foo", "Bar", "Nor");
+        List <String> choices = Arrays.asList("Foo", "Bar", "Nor", "Bar", "Goo", "Foo");
         card.setInitialChoices(choices);
-        System.out.println(card.getCardChoices());
-
-        card.replaceChoice(2, "War");
-        System.out.println(card.getCardChoices());
-
-        card.getCardChoices().add("Woo");
-        System.out.println(card.getCardChoices());
-
-        for(var choice: card.getCardChoices()){
-            System.out.println(choice);
-        }
-
-        List <String> choice = card.getCardChoices();
-
-        System.out.println(choice.subList(0,2));
+        System.out.println(card.getUniqueChoices());
     }
 }
